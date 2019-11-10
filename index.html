@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Posting Question To Json</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+</head>
+<body>
+	<div class="container text-center">
+		<h1 class="bg-light py-4 text-info"><i class="fa fa-question"></i>  Jamb-Lite QUESTIONS</h1>
+	</div>
+
+	<div class="d-flex justify-content-center">
+		<form class="w-75">
+        <select
+          id="subject"
+          class="form-control"
+          placeholder="QUESTION"
+          autocomplete="off"
+          required
+        >
+          <option value="">SUBJECT</option>
+          <option value="ENGLISH">ENGLISH</option>
+          <option value="MATHEMATICS">MATHEMATICS</option>
+          <option value="PHYSICS">PHYSICS</option>
+          <option value="CHEMISTRY">CHEMISTRY</option>
+          <option value="BIOLOGY">BIOLOGY</option>
+          <option value="ECONOMICS">ECONOMICS</option>
+          <option value="AGRICULTURAL SCIENCE">AGRICULTURAL SCIENCE</option>
+          <option value="GEOGRAPHY">GEOGRAPHY</option>
+          <option value="GOVERNMET">GOVERNMET</option>
+          <option value="ACCOUNTING">ACCOUNTING</option>
+          <option value="CRK">CRK</option>
+          <option value="MARKETING">MARKETING</option>
+          <option value="COMMERCE">COMMERCE</option>
+          <option value="YORUBA">YORUBA</option>
+          <option value="FURTHER MATHS">FURTHER MATHS</option>
+          <option value="LITERATURE IN ENGLISH">LITERATURE IN ENGLISH</option>
+        </select>
+
+			<input type="text" id="question" class="form-control" placeholder="QUESTION" autocomplete="off" autofocus required>
+			<div class="row">
+				<div class="col">
+					<input type="text" id="option-a" class="form-control options" placeholder="Option A" autocomplete="off" required>
+				</div>
+				<div class="col">
+					<input type="text" id="option-b" class="form-control options" placeholder="Option B" autocomplete="off" required>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<input type="text" id="option-c" class="form-control options" placeholder="Option  C" autocomplete="off" required>
+				</div>
+				<div class="col">
+					<input type="text" id="option-d" class="form-control options" placeholder="Option D" autocomplete="off" required>
+				</div>
+			</div>
+          <select class="form-control" id="options" required>
+          <option value="">ANSWER</option>
+          <option value="a">OPTION A</option>
+          <option value="b">OPTION B</option>
+          <option value="c">OPTION C</option>
+          <option value="d">OPTION D</option>
+	      </select>
+
+			<div class="d-flex justify-content-center">
+				<button class="btn btn-warning" id="btn-post" type="submiit">POST</button>
+			</div>
+		</form>
+	</div>
+
+
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/posting.js"></script>
+</body>
+</html>
